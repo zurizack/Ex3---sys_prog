@@ -3,7 +3,7 @@ OBJECTS2=txtfind.o
 
 all: test isort txtfind
 
-test: $(OBJECTS1)
+test: $(OBJECTS1) $(OBJECTS2)
 	gcc -g -ansi -Wall -pedantic $(OBJECTS1) -o isort
 	gcc -g -ansi -Wall -pedantic $(OBJECTS2) -o txtfind
 
