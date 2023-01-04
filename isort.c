@@ -11,18 +11,28 @@
  */
 void shift_elements(int *arr, int i)
 {
-    int start = i;
-    int prev = *arr, temp = *arr;
-    int j = i + 1;
-    while ((arr + j) != NULL && i < MAX_SIZE + 1)
-    {
-        temp = *(arr + j);
-        *(arr + j) = prev;
-        prev = temp;
-        i++;
-        j++;
+    
+    int counter = 0;
+    printf("*arr = %d *(arr + i + 1)= %d\n",*arr,*(arr + i + 1));
+    while(counter < i + 1){
+        *(arr + i + 1) = *(arr + i);
+        arr--;
+        counter++;
+        printf("*arr = %d\n",*arr);
     }
-    *(arr + start) = 0; 
+    
+//     int start = i;
+//     int prev = *arr, temp = *arr;
+//     int j = i + 1;
+//     while ((arr + j) != NULL && i < MAX_SIZE + 1)
+//     {
+//         temp = *(arr + j);
+//         *(arr + j) = prev;
+//         prev = temp;
+//         i++;
+//         j++;
+//     }
+//     *(arr + start) = 0; 
 }
 
 /**
