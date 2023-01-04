@@ -1,5 +1,7 @@
 OBJECTS=isort.o
 
+all: isort test
+
 test: $(OBJECTS)
 	gcc -g -ansi -Wall -pedantic $(OBJECTS) -o isort
 
