@@ -82,7 +82,7 @@ void print_arr(int *arr)
 int main(void)
 {
     int *arr;
-    printf("Please enter %d integers separated with spaces: \n", MAX_SIZE);
+    /*printf("Please enter %d integers separated with spaces: \n", MAX_SIZE);*/
     arr = getArray();
     insertion_sort(arr, MAX_SIZE);
     print_arr(arr);
