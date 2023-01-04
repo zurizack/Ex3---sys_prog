@@ -20,19 +20,20 @@ void shift_elements(int *arr, int i)
         counter++;
         printf("*arr = %d\n",*arr);
     }
-    
-//     int start = i;
-//     int prev = *arr, temp = *arr;
-//     int j = i + 1;
-//     while ((arr + j) != NULL && i < MAX_SIZE + 1)
-//     {
-//         temp = *(arr + j);
-//         *(arr + j) = prev;
-//         prev = temp;
-//         i++;
-//         j++;
-//     }
-//     *(arr + start) = 0; 
+    /*
+    int start = i;
+    int prev = *arr, temp = *arr;
+    int j = i + 1;
+    while ((arr + j) != NULL && i < MAX_SIZE + 1)
+    {
+        temp = *(arr + j);
+        *(arr + j) = prev;
+        prev = temp;
+        i++;
+        j++;
+    }
+    *(arr + start) = 0; 
+    */
 }
 
 /**
