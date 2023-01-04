@@ -1,7 +1,7 @@
 OBJECTS1=isort.o
 OBJECTS2=txtfind.o
 #isort txtfind
-all: isort txtfind
+all: isort txtfind clean
 
 test: $(OBJECTS1) $(OBJECTS2)
 	gcc -g -ansi -Wall -pedantic $(OBJECTS1) -o isort
@@ -21,4 +21,5 @@ txtfind.o: txtfind.c txtfind.h
 
 
 clean:
-	rm -f $(OBJECTS1) isort $(OBJECTS2) txtfind
+	rm -f isort.o txtfind.o
+##rm -f $(OBJECTS1) isort $(OBJECTS2) txtfind
